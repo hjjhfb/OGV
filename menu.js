@@ -10,9 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
           if (openLi !== li) openLi.classList.remove('touch-open');
         });
         li.classList.toggle('touch-open');
-        // Wenn geöffnet, scrolle das Element ins Sichtfeld
+        // Nach längerer Verzögerung scrolle das Untermenü an den unteren Rand
         if (li.classList.contains('touch-open')) {
-          li.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          setTimeout(() => {
+            const submenu = li.querySelector('.submenu');
+            if (submenu) {
+              submenu.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            } else {
+              li.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }
+          }, 400);
         }
       }
     });

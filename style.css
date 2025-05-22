@@ -16,7 +16,7 @@ header {
   box-shadow: 0 2px 8px #0002;
 }
 header h1 {
-  color: #fff;
+  color: #000000;
 }
 header h1, header span { margin: 0; }
 nav { 
@@ -35,11 +35,14 @@ nav ul {
 nav li { margin: 0; }
 nav a {
   display: block;
-  color: #fff;
+  color: #111 !important;
   text-decoration: none;
   padding: 1em;
 }
-nav a:hover { background: #0a5422; }
+nav a:hover { 
+  background: #0a5422; 
+  color: #fff !important;
+}
 footer { text-align: center; margin-top: 2em; }
 
 /* ---------- Index-Design ---------- */
@@ -143,13 +146,14 @@ img { max-width: 100%; height: auto; border-radius: 8px; }
 }
 .submenu li a {
   padding: 1em;
-  color: #fff;
+  color: #111 !important;
   text-decoration: none;
   display: block;
   white-space: nowrap;
 }
 .submenu li a:hover {
   background: #0a5422;
+  color: #fff !important;
 }
 nav ul li ul { display: none; }
 nav ul li.touch-open > ul { display: block; }
