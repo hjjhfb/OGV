@@ -122,4 +122,45 @@
     <headline2>Freie Pachtgärten Stand 05.2025</headline2>
     <text2>   Keine Verfügbar</text2>
   </aktuelles>
+  <faq>
+    <frage>
+      <titel>Wo finde ich den OGV Forst?</titel>
+      <antwort>Unsere Vereinsanlage finden Sie <a href="https://maps.google.com/?q=OGV+Forst+Kronauer+Allee" target="_blank" rel="noopener">hier auf Google Maps</a>.</antwort>
+    </frage>
+    <frage>
+      <titel>Wie kann ich Mitglied werden?</titel>
+      <antwort>Füllen Sie das Beitrittsformular aus und senden Sie es per E-Mail an <a href="mailto:mail@ogv-forst.de">mail@ogv-forst.de</a>.</antwort>
+      <link>Files/OGVBeitrittserklaerung.pdf</link>
+    </frage>
+    <frage>
+      <titel>Wie hoch ist der Mitgliedsbeitrag?</titel>
+      <antwort>Jahresbeitrag pro Person 18 Euro
+      Kinder bis 18 Jahre sind frei</antwort>
+    </frage>
+    <frage>
+      <titel>Kann ich das Vereinsheim mieten?</titel>
+      <antwort>Ja, alle Infos und Verträge finden Sie auf der Seite <a href="vereinsheim.html">Vereinsheim</a>.</antwort>
+    </frage>
+    <frage>
+      <titel>Wer darf einen Garten pachten?</titel>
+      <antwort>Jedes Vereinsmitglied kann sich für eine Parzelle bewerben.</antwort>
+    </frage>
+    <frage>
+      <titel>Wie groß ist ein Pachtgarten?</titel>
+      <antwort>Die Pachtgärten 1-8 sind ca. 48 qm groß.
+      Die Pachtgärten 9-16 sind ca. 38 qm groß
+      </antwort>
+    </frage>
+    <frage>
+      <titel>Was kostet ein Pachtgarten?</titel>
+      <antwort>Pächter zahlen eine Kaution von 80 Euro
+      Die Pachtgärten 1-8 kosten 60€.
+      Die Pachtgärten 9-16 kosten 50€
+      </antwort>
+    </frage>
+    <frage>
+      <titel>Wann ist der Beitrag fällig</titel>
+      <antwort>Er ist  jeweils bis zum 01.06. eines Kalenderjahres fällig</antwort>
+    </frage>
+  </faq>
 </daten>

@@ -330,3 +330,82 @@ body.vorstand-info main {
   padding: 1em 0.5em;
   font-size: 1.1em;
 }
+
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  height: 80px;
+  position: relative;
+  border-top: none;
+  border-bottom: none;
+}
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-scroll 45s linear infinite;
+  font-size: 45px;
+  font-weight: bold;
+  color: #118b38;
+  padding: 0.5em 0;
+}
+.ticker-content span {
+  text-decoration: none !important;
+}
+.ticker-content a {
+  text-decoration: none !important;
+  color: inherit;
+}
+.ticker .ticker-content a,
+.ticker-content span a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  background: #19cf53;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0003;
+  transition: opacity 0.3s;
+  opacity: 0.8;
+}
+#back-to-top:hover {
+  background: #118b38;
+  opacity: 1;
+}
+#back-to-top.show {
+  display: block;
+}
+
+#faq-list details {
+  margin-bottom: 1em;
+  background: #f8f8f8;
+  border-radius: 6px;
+  padding: 1em;
+  box-shadow: 0 1px 4px #0001;
+}
+#faq-list summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #118b38;
+  font-size: 1.1em;
+}
+#faq-list details[open] summary {
+  color: #19cf53;
+}
+

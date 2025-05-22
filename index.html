@@ -47,11 +47,11 @@
     </div>
   </div>
   <!-- Laufbalken unter dem Slider -->
-  <div style="background:#fff;overflow:hidden;">
-    <marquee behavior="scroll" direction="left" style="color:#118b38;font-size:30px;font-weight:bold;padding:0.5em 0;" id="ticker">
-      Der nächste Arbeitseinsatz findet am 1.7.2025 statt .
-    </marquee>
+<div class="ticker">
+  <div class="ticker-content" id="ticker-content">
+    <!-- Tickertext wird per JS eingefügt -->
   </div>
+</div>
   <main class="main-content">
     <div class="flex-row">
       <div class="flex-col">
@@ -104,5 +104,19 @@
   <script src="ticker.js"></script>
   <script src="menu.js"></script>
   <script src="header.js"></script>
+  <button id="back-to-top" title="Nach oben">↑</button>
+  <script>
+window.addEventListener('scroll', function() {
+  const btn = document.getElementById('back-to-top');
+  if (window.scrollY > 300) {
+    btn.classList.add('show');
+  } else {
+    btn.classList.remove('show');
+  }
+});
+document.getElementById('back-to-top').onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
 </body>
 </html>

@@ -53,8 +53,22 @@
   <footer>
     &copy; 2025 Obst- und Gartenbauverein Forst &ndash; Alle Rechte vorbehalten
   </footer>
+  <button id="back-to-top" title="Nach oben">↑</button>
   <script src="menu.js"></script>
   <script src="header.js"></script>
   <script src="vereinsheim.js"></script>
+  <script>
+    window.addEventListener('scroll', function() {
+      const btn = document.getElementById('back-to-top');
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+    document.getElementById('back-to-top').onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>
