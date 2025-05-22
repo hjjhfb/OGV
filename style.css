@@ -1,0 +1,262 @@
+/* style.css */
+
+/* ---------- Gemeinsame Basis ---------- */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+}
+header {
+  background: #118b38;
+  color: #fff;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px #0002;
+}
+header h1 {
+  color: #fff;
+}
+header h1, header span { margin: 0; }
+nav { 
+  background: #19cf53; 
+  position: static;
+  top: 0px; /* exakt die Höhe des Headers */
+  z-index: 999;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav li { margin: 0; }
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+}
+nav a:hover { background: #0a5422; }
+footer { text-align: center; margin-top: 2em; }
+
+/* ---------- Index-Design ---------- */
+body.index-home .slider-wrapper {
+  max-width: 1200px;
+  margin: 2em auto;
+  position: relative;
+}
+body.index-home .slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0002;
+}
+
+body.index-home .slider-caption {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body.index-home .slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+body.index-home .slider-controls button {
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  pointer-events: all;
+  padding: 0 0.5em;
+  border-radius: 50%;
+}
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+body.index-home .main-content {
+  max-width: 1200px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 2em;
+}
+body.index-home .flex-row { display: flex; flex-wrap: wrap; gap: 2em; }
+body.index-home .flex-col { flex: 1 1 200px; min-width: 200px; text-align: center; }
+body.index-home .flex-col img { max-width: 128px; margin-bottom: 1em; }
+body.index-home .schwerpunkte { margin-top: 2em; }
+body.index-home .schwerpunkte .flex-col img { max-width: 128px; }
+body.index-home .slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+body.index-home header img { max-width:120px; max-height:80px; border-radius:8px; margin-right:1em; }
+
+/* ---------- Aktuelles-Design (Standard für alle anderen Seiten) ---------- */
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 2em;
+}
+h1, h2 { color: #118b38; }
+hr { border: none; border-top: 1px solid #ccc; margin: 2em 0; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+
+/* ---------- Menü Dropdown ---------- */
+.dropdown { position: relative; }
+.submenu {
+  display: none;
+  position: absolute;
+  background: #19cf53;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 180px;
+  z-index: 2001;
+}
+.dropdown:hover .submenu {
+  display: block;
+}
+.submenu li a {
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+.submenu li a:hover {
+  background: #0a5422;
+}
+nav ul li ul { display: none; }
+nav ul li.touch-open > ul { display: block; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 800px) {
+  .flex-row { flex-direction: column; gap: 1em; }
+  nav ul { flex-direction: column; overflow-y: auto; max-height: 90vh; }
+  nav a { font-size: 1em; padding: 0.7em 1em; }
+  .submenu {
+    position: static;
+    background: none;
+    min-width: 0;
+    box-shadow: none;
+  }
+}
+
+/* Vorstand & Kontaktinformationen – spezielles Styling */
+body.vorstand-info main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  overflow: hidden;
+}
+
+body.vorstand-info main table th,
+body.vorstand-info main table td {
+  padding: 0.7em 1em;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 1em;
+}
+
+body.vorstand-info main table tr:last-child td {
+  border-bottom: none;
+}
+
+body.vorstand-info main table th {
+  background: #19cf53;
+  color: #fff;
+  font-weight: bold;
+}
+
+body.vorstand-info main table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+body.vorstand-info main h1 {
+  margin-top: 0;
+  color: #118b38;
+}
+
+body.vorstand-info main {
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 2em;
+}
+
+/* Mehr Abstand in der Vorstandstabelle */
+#vorstand-tabelle td, #vorstand-tabelle th {
+  padding: 1em 1.5em;
+  /* Optional: vertikaler Abstand erhöhen */
+}
+#vorstand-tabelle tr {
+  height: 2.5em; /* Zeilenhöhe erhöhen */
+}
+
+#vorstand-tabelle td:nth-child(3),
+#vorstand-tabelle th:nth-child(3) {
+  min-width: 220px;   /* oder z.B. 250px */
+  width: 30%;
+}
+
+#vorstand-tabelle td:nth-child(2),
+#vorstand-tabelle th:nth-child(2) {
+  min-width: 220px;   /* z.B. 180px, passe nach Wunsch an */
+  width: 22%;
+}
+
+/* Bilderreihe */
+.bilderreihe {
+  display: flex;
+  gap: 1em;           /* Abstand zwischen den Bildern */
+  flex-wrap: nowrap;  /* Kein Umbruch, alle in einer Zeile */
+  overflow-x: auto;   /* Bei kleinen Bildschirmen scrollbar */
+  margin-bottom: 1.5em;
+}
+.bilderreihe img {
+  max-width: 180px;   /* Passe die Breite nach Wunsch an */
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;     /* Verhindert, dass die Bilder schrumpfen */
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 1.5s;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+.slider {
+  position: relative;
+}

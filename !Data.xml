@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<daten>
+  <ticker>
+    <nachricht>Der nächste Arbeitseinsatz findet am 07.06.2025 statt.</nachricht>
+    <nachricht>Weitere Arbeitseinsätze finden am 12.07.2025 / 09.08.2025 / 13.09.2025 / 11.10.2025 statt.</nachricht>
+    <nachricht>Aktuell gibt es keine freien Pachtgärten.</nachricht>
+  </ticker>
+  <vorstand>
+    <mitglied>
+      <amt>1. Vorsitzender</amt>
+      <name>Jochen Schwertheim</name>
+      <adresse>76689 Karlsdorf-Neuthard, Herrenweg 3</adresse>
+      <mail>mail@ogv-forst.de</mail>
+    </mitglied>
+    <mitglied>
+      <amt>2. Vorsitzende</amt>
+      <name>Ute Hörner</name>
+      <mail>uc@hoernerforst.de</mail>
+    </mitglied>
+    <mitglied>
+      <amt>Kassiererin/Mitgliederverwaltung</amt>
+      <name>Christina Holtzmann</name>
+      <info>Bankverbindung: Volksbank Kraichgau, DE29 6729 2200 0000 0250 54</info>
+    </mitglied>
+    <mitglied>
+      <amt>Schriftführerin</amt>
+      <name>Nadine Jachmann</name>
+    </mitglied>
+    <mitglied>
+      <amt>Beisitzer Anlage/Garten</amt>
+      <name>Reiner Blumhofer</name>
+    </mitglied>
+    <mitglied>
+      <amt>Beisitzerin Vermietung</amt>
+      <name>Mihaela Munteanu</name>
+      <telefon>0151 5797 8473</telefon>
+    </mitglied>
+    <mitglied>
+      <amt>Beisitzer Homepage</amt>
+      <name>Jonathan Schneidemesser</name>
+      <mail>jonathan.schneidemesser@gmail.com</mail>
+    </mitglied>
+    <mitglied>
+      <amt>Beisitzer Pächter</amt>
+      <name>kommissarisch Ute Hörner</name>
+    </mitglied>
+    <mitglied>
+      <amt>Beisitzerin Jubilare</amt>
+      <name>Karin Flittner</name>
+    </mitglied>
+    <mitglied>
+      <amt>Beisitzerin Senioren</amt>
+      <name>Heidi Böser</name>
+    </mitglied>
+    <mitglied>
+      <amt>Kassenprüferin</amt>
+      <name>Dorothea Glück</name>
+    </mitglied>
+    <mitglied>
+      <amt>Kassenprüferin</amt>
+      <name>Gerda Krächter</name>
+    </mitglied>
+  </vorstand>
+  <vereinsheim>
+    <mietmoeglichkeiten>
+      <punkt>bis 40 Personen: 200 Euro (Sitzplätze im Haus)</punkt>
+      <punkt>ab 41 Personen: +3 Euro pro Person (Haus, Terrassen, Grillplatz, Gelände)</punkt>
+      <punkt>Sonderregelung nach Vereinbarung (Haus, Gelände, Grillplatz)</punkt>
+      <punkt>Eintagesvermietung Haus: 100 Euro (Schlüsselübergabe am Miettag)</punkt>
+      <punkt>Grillplatz und Tipi / Toiletten: 80 Euro</punkt>
+      <punkt>Reinigung auf Wunsch: 30 Euro</punkt>
+      <punkt>Schubkarre Holz: 20 Euro</punkt>
+      <punkt>Keller (nur für Workshops): 40 Euro (Heizung/Reinigung)</punkt>
+      <punkt>Haus 3-4 Std. (nur für Workshops): 60 Euro (Heizung/Reinigung)</punkt>
+      <punkt>Gelände für Fotografen: 15 Euro (Versicherung)</punkt>
+    </mietmoeglichkeiten>
+    <kontakt>
+      Haben Sie Interesse, wenden Sie sich an Mihaela Munteanu unter folgender Rufnummer: 0151 57978473.
+    </kontakt>
+  </vereinsheim>
+  <aktuelles>
+    <headline1>Arbeitseinsätze 2025</headline1>
+    <text1>   12. April 2025 / 10. Mai 2025 07. Juni 2025 / 12. Juli 2025 / 09. August 2025 / 13. September 2025 / 11. Oktober 2025</text1>
+    <headline2>Freie Pachtgärten Stand 05.2025</headline2>
+    <text2>   Keine Verfügbar</text2>
+  </aktuelles>
+</daten>
