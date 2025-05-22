@@ -114,6 +114,13 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 8px #0001;
   padding: 2em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(.4,2,.6,1);
+}
+body.page-loaded main {
+  opacity: 1;
+  transform: translateY(0);
 }
 h1, h2 { color: #118b38; }
 hr { border: none; border-top: 1px solid #ccc; margin: 2em 0; }
@@ -147,17 +154,16 @@ img { max-width: 100%; height: auto; border-radius: 8px; }
 nav ul li ul { display: none; }
 nav ul li.touch-open > ul { display: block; }
 
+.submenu-arrow {
+  font-size: 0.8em;
+  margin-left: 0.3em;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 800px) {
   .flex-row { flex-direction: column; gap: 1em; }
   nav ul { flex-direction: column; overflow-y: auto; max-height: 90vh; }
   nav a { font-size: 1em; padding: 0.7em 1em; }
-  .submenu {
-    position: static;
-    background: none;
-    min-width: 0;
-    box-shadow: none;
-  }
 }
 
 /* Vorstand & Kontaktinformationen – spezielles Styling */
@@ -259,4 +265,68 @@ body.vorstand-info main {
 }
 .slider {
   position: relative;
+}
+
+#mietmoeglichkeiten {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+#mietmoeglichkeiten li {
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  font-family: inherit;
+}
+.miet-text {
+  flex: 1 1 auto;
+  min-width: 180px;
+}
+.miet-preis {
+  font-weight: bold;
+  flex: 0 0 auto;
+  text-align: right;
+  white-space: nowrap;
+  margin-left: 1em;
+}
+.miet-text {
+  display: inline-block;
+  min-width: 22em; /* Passe die Breite nach Bedarf an */
+}
+.miet-preis {
+  font-weight: bold;
+  /* color: #118b38; */ /* Farbe entfernt, jetzt schwarz */
+  display: inline-block;
+  min-width: 12em; /* Optional: sorgt für gleiche Ausrichtung */
+}
+
+#mietmoeglichkeiten-tabelle {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  overflow: hidden;
+}
+#mietmoeglichkeiten-tabelle th,
+#mietmoeglichkeiten-tabelle td {
+  padding: 0.7em 1em;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 1.1em;
+}
+#mietmoeglichkeiten-tabelle th {
+  background: #19cf53;
+  color: #fff;
+  font-weight: bold;
+}
+#mietmoeglichkeiten-tabelle tr:last-child td {
+  border-bottom: none;
+}
+
+.miet-ueberschrift {
+  font-weight: bold;
+  background: #f0f0f0;
+  text-align: left;
+  padding: 1em 0.5em;
+  font-size: 1.1em;
 }

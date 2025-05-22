@@ -63,16 +63,54 @@
   </vorstand>
   <vereinsheim>
     <mietmoeglichkeiten>
-      <punkt>bis 40 Personen: 200 Euro (Sitzplätze im Haus)</punkt>
-      <punkt>ab 41 Personen: +3 Euro pro Person (Haus, Terrassen, Grillplatz, Gelände)</punkt>
-      <punkt>Sonderregelung nach Vereinbarung (Haus, Gelände, Grillplatz)</punkt>
-      <punkt>Eintagesvermietung Haus: 100 Euro (Schlüsselübergabe am Miettag)</punkt>
-      <punkt>Grillplatz und Tipi / Toiletten: 80 Euro</punkt>
-      <punkt>Reinigung auf Wunsch: 30 Euro</punkt>
-      <punkt>Schubkarre Holz: 20 Euro</punkt>
-      <punkt>Keller (nur für Workshops): 40 Euro (Heizung/Reinigung)</punkt>
-      <punkt>Haus 3-4 Std. (nur für Workshops): 60 Euro (Heizung/Reinigung)</punkt>
-      <punkt>Gelände für Fotografen: 15 Euro (Versicherung)</punkt>
+      <eintrag>
+        <bezeichnung>bis 40 Personen</bezeichnung>
+        <preis>200 Euro</preis>
+        <info>Sitzplätze im Haus</info>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>ab 41 Personen</bezeichnung>
+        <preis>+3 Euro pro Person</preis>
+        <info>Haus, Terrassen, Grillplatz, Gelände</info>
+      </eintrag>
+      <eintrag>
+        <ueberschrift>Sonderregelung nach Vereinbarung Haus, Gelände, Grillplatz</ueberschrift>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>Eintagesvermietung Haus</bezeichnung>
+        <preis>100 Euro</preis>
+        <info>Schlüsselübergabe am Miettag</info>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>Grillplatz und Tipi / Toiletten</bezeichnung>
+        <preis>80 Euro</preis>
+        <info></info>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>Reinigung auf Wunsch</bezeichnung>
+        <preis>30 Euro</preis>
+        <info></info>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>Schubkarre Holz</bezeichnung>
+        <preis>20 Euro</preis>
+        <info></info>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>Keller (nur für Workshops)</bezeichnung>
+        <preis>40 Euro</preis>
+        <info>Heizung/Reinigung</info>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>Haus 3-4 Std. (nur für Workshops)</bezeichnung>
+        <preis>60 Euro</preis>
+        <info>Heizung/Reinigung</info>
+      </eintrag>
+      <eintrag>
+        <bezeichnung>Gelände für Fotografen</bezeichnung>
+        <preis>15 Euro</preis>
+        <info>Versicherung</info>
+      </eintrag>
     </mietmoeglichkeiten>
     <kontakt>
       Haben Sie Interesse, wenden Sie sich an Mihaela Munteanu unter folgender Rufnummer: 0151 57978473.

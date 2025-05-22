@@ -17,6 +17,18 @@
     <p><strong>Das Haus wird künftig nur noch einmal am Wochenende vermietet!</strong></p>
     <p>Jeweils samstags ab 10.00 Uhr bis sonntags 22.00 Uhr. Schlüsselübergabe nach Absprache.</p>
     <ul id="mietmoeglichkeiten"></ul>
+    <table id="mietmoeglichkeiten-tabelle">
+      <thead>
+        <tr>
+          <th>Bezeichnung</th>
+          <th>Preis</th>
+          <th>Info</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Wird per JS gefüllt -->
+      </tbody>
+    </table>
     <p><strong>Installation und Betreiben von Musikanlagen und Lichtorgeln sind aus nachbarschaftsrechtlichen Gründen nicht erlaubt!</strong></p>
     <div class="bilderreihe" style="flex-wrap:nowrap; overflow-x:auto;">
       <img src="images/Vereinsheim/Vereinsheim0.jpg" alt="">
@@ -44,5 +56,8 @@
   <script src="menu.js"></script>
   <script src="header.js"></script>
   <script src="vereinsheim.js"></script>
+  <script>
+    document.body.classList.add('page-loaded');
+  </script>
 </body>
 </html>
