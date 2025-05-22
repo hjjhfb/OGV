@@ -3,13 +3,17 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', function(e) {
       if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
         e.preventDefault();
-        e.stopPropagation(); // <-- verhindert das sofortige Schließen!
+        e.stopPropagation();
         const li = this.parentElement;
         // Schließe andere offene Menüs
         document.querySelectorAll('.dropdown.touch-open').forEach(openLi => {
           if (openLi !== li) openLi.classList.remove('touch-open');
         });
         li.classList.toggle('touch-open');
+        // Wenn geöffnet, scrolle das Element ins Sichtfeld
+        if (li.classList.contains('touch-open')) {
+          li.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
       }
     });
   });
